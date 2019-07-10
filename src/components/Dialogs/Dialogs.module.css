@@ -1,0 +1,47 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    padding-bottom: 14px;
+}
+.dialogsItems {
+    padding: 10px;
+}
+.dialog{
+    position: relative;
+    padding: 5px;
+}
+.dialog img{
+    position: relative;
+    width: 40px;
+    border-radius: 12px;
+    top: 12px;
+    margin-right: 5px;
+}
+.dialog a{
+    text-decoration: none;
+    transition: 0.5s;
+    color: #298cad;
+    font-size: 17px;
+}
+.dialog a:hover{
+    color: #36d2ff;
+}
+.messages {
+    padding-top: 20px;
+    position: relative;
+}
+.message {
+    font-size: 18px;
+    padding: 5px;
+    border: 1px black solid ;
+}
+.sendMessage{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.sendMessage button{
+    position: absolute;
+    bottom: 15px;
+    margin-left: 5px;
+}
