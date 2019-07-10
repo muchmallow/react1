@@ -308,17 +308,17 @@
     <property name="ts.external.directory.path" value="D:\Programs\PhpStorm 2018.2.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programs\openserver\OSPanel\domains\react1\react1\src\components\Profile" />
+      <recent name="D:\Programs\openserver\OSPanel\domains\react1\react1\src\components\Navbar" />
+      <recent name="D:\Programs\openserver\OSPanel\domains\react1\react1\src\components\Header" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programs\openserver\OSPanel\domains\react1\react1\src\components\Dialogs" />
       <recent name="D:\Programs\openserver\OSPanel\domains\react1\react1\src\components\Profile\MyPosts" />
       <recent name="D:\Programs\openserver\OSPanel\domains\react1\react1\src" />
       <recent name="D:\Programs\openserver\OSPanel\domains\react1\react1\src\components\Dialogs\DialogItem" />
       <recent name="D:\Programs\openserver\OSPanel\domains\react1\react1\src\components\Dialogs\Message" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Programs\openserver\OSPanel\domains\react1\react1\src\components\Profile" />
-      <recent name="D:\Programs\openserver\OSPanel\domains\react1\react1\src\components\Navbar" />
-      <recent name="D:\Programs\openserver\OSPanel\domains\react1\react1\src\components\Header" />
     </key>
   </component>
   <component name="RunDashboard">
