@@ -194,7 +194,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../Repository socialNetwork/socialNetwork" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="b45be40b-711a-4b22-be26-5eb75a306476" />
@@ -350,7 +350,7 @@
     <property name="node.js.selected.package.standard" value="D:\Programs\openserver\OSPanel\domains\react1\react1\node_modules\eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="D:\Programs\PhpStorm 2018.2.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -394,12 +394,12 @@
       <workItem from="1562336483116" duration="55913000" />
       <workItem from="1562681679423" duration="18645000" />
       <workItem from="1562782495590" duration="8892000" />
-      <workItem from="1562793015709" duration="3356000" />
+      <workItem from="1562793015709" duration="3418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118032000" />
+    <option name="totallyTimeSpent" value="118094000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -412,7 +412,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="960" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" x="349" y="78" width="261" height="893" id="Project" order="0" sideWeight="0.4994401" visible="true" weight="0.18444444" />
       <window_info id="Structure" order="1" sideWeight="0.5005599" side_tool="true" weight="0.16444445" />
