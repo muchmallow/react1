@@ -28,8 +28,39 @@ export const usersAPI = {
                 return response.data;
             });
     },
-
+    getMeAuth() {
+        return instance.get(`auth/me`)
+            .then(response => {
+                return response.data;
+            });
+    },
+    getProfile(userId) {
+        return instance.get(`profile/${userId}`)
+            .then(response => {
+                return response.data;
+            });
+    },
 };
+
+export const authAPI = {
+    me() {
+        return instance.get(`auth/me`)
+            .then(response => {
+                return response.data;
+            });
+    }
+};
+
+
+// axios.get(`https://social-network.samuraijs.com/api/1.0/auth/me`, {
+//     withCredentials: true
+// })
+//     .then(response => {
+//         if(response.data.resultCode === 0){
+//             let {id, login, email} = response.data.data;
+//             this.props.setAuthUserData(id, email, login);
+//         }
+//     });
 
 
 // axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {
