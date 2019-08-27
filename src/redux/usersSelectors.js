@@ -1,8 +1,12 @@
-import React from "react";
+import {createSelector} from "reselect";
 
 export const getUsers = (state) => {
     return state.usersPage.users;
 };
+
+// const getUsersSelector = createSelector(getUsers, getIsFetching, (users, isFetching) => {
+//     return users.filter(u => true).map(u => u*2);
+// });
 
 export const getPageSize = (state) => {
     return state.usersPage.pageSize;
