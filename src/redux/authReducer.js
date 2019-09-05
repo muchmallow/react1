@@ -1,7 +1,7 @@
 import {authAPI} from "../api/api";
 import {stopSubmit} from "redux-form";
 
-const SET_USER_DATA = "SET_USER_DATA";
+const SET_USER_DATA = "auth/SET_USER_DATA";
 
 
 let initialState = {
@@ -38,32 +38,29 @@ export const setAuthUserData = (userId, email, login, isAuth) => {
     };
 };
 
-export const getAuthUserDataThunkCreator = () => (dispatch) => {
-    return authAPI.me().then(data => {
-        if(data.resultCode === 0) {
-            let {id, login, email} = data.data;
-            dispatch(setAuthUserData(id, email, login, true));
-        }
-    });
+export const getAuthUserDataThunkCreator = () => async (dispatch) => {
+    let response = await authAPI.me();
+    if (response.data.resultCode === 0) {
+        let {id, login, email} = response.data.data;
+        dispatch(setAuthUserData(id, email, login, true));
+    }
 };
 
-export const loginThunkCreator = (email, password, rememberMe) => (dispatch) => {
-    authAPI.login(email, password, rememberMe).then(response => {
+export const loginThunkCreator = (email, password, rememberMe) => async (dispatch) => {
+    let response = await authAPI.login(email, password, rememberMe);
         if (response.data.resultCode === 0) {
             dispatch(getAuthUserDataThunkCreator());
         } else {
             let message = response.data.messages.length > 0 ? response.data.messages[0] : "Some error";
             dispatch(stopSubmit("login", {_error: message}));
         }
-    });
 };
 
-export const logoutThunkCreator = () => (dispatch) => {
-    authAPI.logout().then(response => {
+export const logoutThunkCreator = () => async (dispatch) => {
+    let response = await authAPI.logout();
         if(response.data.resultCode === 0) {
             dispatch(setAuthUserData(null, null, null, false));
         }
-    });
 };
 
 export default authReducer;

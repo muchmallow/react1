@@ -79,24 +79,21 @@ export const deletePost = (postId) => {
     };
 };
 
-export const getUserProfileThunkCreator = (userId) => (dispatch) => {
-    profileAPI.getProfile(userId).then(response => {
+export const getUserProfileThunkCreator = (userId) => async (dispatch) => {
+    let response = await profileAPI.getProfile(userId);
         dispatch(setUserProfile(response.data));
-    });
 };
 
-export const getStatusThunkCreator = (userId) => (dispatch) => {
-    profileAPI.getStatus(userId).then(response => {
+export const getStatusThunkCreator = (userId) => async (dispatch) => {
+    let response = await profileAPI.getStatus(userId);
         dispatch(setUserStatus(response.data));
-    });
 };
 
-export const updateStatusThunkCreator = (status) => (dispatch) => {
-    profileAPI.updateStatus(status).then(response => {
+export const updateStatusThunkCreator = (status) => async (dispatch) => {
+    let response = await profileAPI.updateStatus(status);
         if(response.resultCode === 0) {
             dispatch(setUserStatus(status));
         }
-    });
 };
 
 export default profileReducer;

@@ -4,8 +4,8 @@ import Preloader from "../../common/preloader/preloader";
 import ProfileStatus from "./ProfileStatus";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
-const ProfileInfo = (props) => {
-	if(!props.profile) {
+const ProfileInfo = ({profile, status, updateStatusThunkCreator}) => {
+	if(!profile) {
 		return <Preloader/>
 	}
 
@@ -15,9 +15,9 @@ const ProfileInfo = (props) => {
 				{/*<img src="https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_960_720.jpg" alt=""/>*/}
 			{/*</div>*/}
 			<div className={classes.descriptionBlock}>
-                <img src={props.profile.photos.large}/>
-				<ProfileStatusWithHooks status={props.status}
-							   updateStatusThunkCreator={props.updateStatusThunkCreator}/>
+                <img src={profile.photos.large}/>
+				<ProfileStatusWithHooks status={status}
+							   updateStatusThunkCreator={updateStatusThunkCreator}/>
 			</div>
 		</div>
 	);
