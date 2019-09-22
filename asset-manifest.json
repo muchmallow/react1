@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/react1/static/css/main.27df26ed.chunk.css",
+    "main.js": "/react1/static/js/main.74910ce5.chunk.js",
+    "main.js.map": "/react1/static/js/main.74910ce5.chunk.js.map",
+    "runtime~main.js": "/react1/static/js/runtime~main.dd1840ce.js",
+    "runtime~main.js.map": "/react1/static/js/runtime~main.dd1840ce.js.map",
+    "static/js/2.0c753a7a.chunk.js": "/react1/static/js/2.0c753a7a.chunk.js",
+    "static/js/2.0c753a7a.chunk.js.map": "/react1/static/js/2.0c753a7a.chunk.js.map",
+    "static/css/3.645dbb4b.chunk.css": "/react1/static/css/3.645dbb4b.chunk.css",
+    "static/js/3.707f4b21.chunk.js": "/react1/static/js/3.707f4b21.chunk.js",
+    "static/js/3.707f4b21.chunk.js.map": "/react1/static/js/3.707f4b21.chunk.js.map",
+    "static/css/4.7dbf4bd7.chunk.css": "/react1/static/css/4.7dbf4bd7.chunk.css",
+    "static/js/4.978e5c6f.chunk.js": "/react1/static/js/4.978e5c6f.chunk.js",
+    "static/js/4.978e5c6f.chunk.js.map": "/react1/static/js/4.978e5c6f.chunk.js.map",
+    "static/css/5.5f81c1ca.chunk.css": "/react1/static/css/5.5f81c1ca.chunk.css",
+    "static/js/5.c1cf054c.chunk.js": "/react1/static/js/5.c1cf054c.chunk.js",
+    "static/js/5.c1cf054c.chunk.js.map": "/react1/static/js/5.c1cf054c.chunk.js.map",
+    "index.html": "/react1/index.html",
+    "precache-manifest.f075255e515313eafc79249ad7671ba4.js": "/react1/precache-manifest.f075255e515313eafc79249ad7671ba4.js",
+    "service-worker.js": "/react1/service-worker.js",
+    "static/css/3.645dbb4b.chunk.css.map": "/react1/static/css/3.645dbb4b.chunk.css.map",
+    "static/css/4.7dbf4bd7.chunk.css.map": "/react1/static/css/4.7dbf4bd7.chunk.css.map",
+    "static/css/5.5f81c1ca.chunk.css.map": "/react1/static/css/5.5f81c1ca.chunk.css.map",
+    "static/css/main.27df26ed.chunk.css.map": "/react1/static/css/main.27df26ed.chunk.css.map",
+    "static/media/preloader.svg": "/react1/static/media/preloader.c5dcdbc6.svg",
+    "static/media/user_image_male.png": "/react1/static/media/user_image_male.04867da4.png"
+  }
+}
