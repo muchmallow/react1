@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 const Navbar = (props) => {
 
-	let avatarUrls = props.state.avatarUrls.map(u => <img src={u.url} alt="avatar"/>);
+	//let avatarUrls = props.state.avatarUrls.map(u => <img src={u.url} alt="avatar" key={Date.now()}/>);
 
 	return(
 		<nav className={classes.nav}>
@@ -30,7 +30,7 @@ const Navbar = (props) => {
 				<div className={classes.friendsWrapper}>
 					Your friends
 					<div className={classes.friendsAvatars}>
-						{avatarUrls}
+						{/*{avatarUrls}*/}
 					</div>
 				</div>
 			</div>

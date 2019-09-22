@@ -1,5 +1,5 @@
 import React from "react";
-import {Field, reduxForm} from "redux-form";
+import {reduxForm} from "redux-form";
 import {createField, Input} from "../common/FormsControls/FormsControls";
 import {required} from "../../utils/validators/validators";
 import {connect} from "react-redux";
@@ -25,7 +25,6 @@ const LoginForm = ({handleSubmit, error}) => {
 };
 
 const LoginReduxForm = reduxForm({
-    // a unique name for the form
     form: "login"
 })(LoginForm);
 
