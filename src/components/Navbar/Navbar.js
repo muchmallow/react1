@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 const Navbar = (props) => {
 
-	let avatarUrls = props.state.avatarUrls.map(u => <img src={u.url} alt="avatar" key={Date.now()}/>);
+	let avatarUrls = props.avatarUrls.map(u => <img src={u.url} alt="avatar"/>);
 
 	return(
 		<nav className={classes.nav}>

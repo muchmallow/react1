@@ -34,7 +34,7 @@ class App extends React.Component{
         return (
             <div className={"app-wrapper"}>
                 <HeaderContainer/>
-                <Navbar state={this.props.store.getState().sideNavbar}/>
+                <Navbar avatarUrls={this.props.avatarUrls}/>
                 <div className={"app-wrapper-content"}>
                     <Route path={"/dialogs"}
                            render={withSuspense(DialogsContainer)}/>
@@ -57,7 +57,8 @@ class App extends React.Component{
 }
 
 const mapStateToProps = (state) => ({
-	initialized: state.app.initialized
+	initialized: state.app.initialized,
+    avatarUrls: state.sideNavbar.avatarUrls
 });
 export default compose(
     withRouter,
