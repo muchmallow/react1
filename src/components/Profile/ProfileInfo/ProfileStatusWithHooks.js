@@ -2,8 +2,7 @@ import React, {useState, useEffect} from "react";
 
 const ProfileStatusWithHooks = (props) => {
 
-    //HOOK
-    let [editMode, setEditMode] = useState(false); //destructuring assignment
+    let [editMode, setEditMode] = useState(false);
     let [status, setStatus] = useState(props.status);
 
     useEffect(() => {

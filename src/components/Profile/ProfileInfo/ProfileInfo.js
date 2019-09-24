@@ -2,19 +2,24 @@ import React from "react";
 import classes from "./ProfileInfo.module.css";
 import Preloader from "../../common/preloader/preloader";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
+import userPhoto from "../../../assets/images/user_image_male.png";
 
-const ProfileInfo = ({profile, status, updateStatusThunkCreator}) => {
+const ProfileInfo = ({profile, status, updateStatusThunkCreator, isOwner, savePhotoTC}) => {
 	if(!profile) {
 		return <Preloader/>
 	}
 
+	const mainPhotoSelectedOn = (e) => {
+		if (e.target.files.length) {
+			savePhotoTC(e.target.files[0]);
+		}
+	};
+
 	return (
 		<div>
-			{/*<div>*/}
-				{/*<img src="https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_960_720.jpg" alt=""/>*/}
-			{/*</div>*/}
 			<div className={classes.descriptionBlock}>
-                <img src={profile.photos.large} alt={"img"}/>
+                <img src={profile.photos.large || userPhoto}  className={classes.mainPhoto} alt={"img"}/>
+				{isOwner && <input type={"file"} onChange={mainPhotoSelectedOn}/>}
 				<ProfileStatusWithHooks status={status}
 							   updateStatusThunkCreator={updateStatusThunkCreator}/>
 			</div>
