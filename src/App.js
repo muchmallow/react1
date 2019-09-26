@@ -46,7 +46,7 @@ class App extends React.Component{
                 <Navbar avatarUrls={this.props.avatarUrls}/>
                 <div className={"app-wrapper-content"}>
                     <Switch>
-                        <Redirect from={"/"} to={"profile"}/>
+                        <Redirect exact from={"/"} to={"/profile"}/>
                         <Route path={"/dialogs"}
                                render={withSuspense(DialogsContainer)}/>
                         <Route path={"/profile/:userId?"}
